@@ -1,0 +1,86 @@
+/* Strona Worklog Lite: te same kolory co aplikacja (src/styles.css) — chłodny papier, atrament, zakreślacz */
+
+:root {
+  --paper: #eceff3;
+  --surface: #ffffff;
+  --ink: #172033;
+  --muted: #5a6577;
+  --line: #d3d9e2;
+  --accent: #1f3fbf;
+  --mark: #f4d35e;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Cantarell, sans-serif;
+  --num: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #151b24;
+    --surface: #1d2531;
+    --ink: #e6ebf2;
+    --muted: #97a3b6;
+    --line: #2f3a4a;
+    --accent: #7d97ff;
+    --mark: #c9a92f;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.6 var(--font);
+  -webkit-font-smoothing: antialiased;
+  padding-inline: 16px;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+h1, h2, h3 { line-height: 1.2; letter-spacing: -0.015em; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 1.4rem + 2.6vw, 2.9rem); margin: 0; }
+h2 { font-size: 1.4rem; margin: 2.6rem 0 0.8rem; }
+h3 { font-size: 1.05rem; margin: 1.6rem 0 0.4rem; }
+p, li { max-width: 68ch; }
+code { font-size: 0.92em; }
+
+.wrap { max-width: 920px; margin: 0 auto; }
+
+header.site {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem 1.5rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 0.6rem; font-weight: 650; color: var(--ink); text-decoration: none; }
+.brand img { width: 34px; height: 34px; }
+nav.site { display: flex; flex-wrap: wrap; gap: 0.3rem 1.2rem; font-size: 0.95rem; }
+nav.site a { color: var(--muted); text-decoration: none; }
+nav.site a:hover, nav.site a[aria-current="page"] { color: var(--ink); }
+
+main { padding: 2.5rem 0 3rem; }
+.hero { display: grid; gap: 1rem; }
+.hero img { width: 88px; height: 88px; }
+.lede { font-size: 1.2rem; color: var(--muted); margin: 0; }
+.hl { background: linear-gradient(transparent 58%, var(--mark) 58%); padding: 0 0.06em; }
+.stores { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.4rem; }
+.pill { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 0.3rem 0.85rem; font-size: 0.92rem; color: var(--muted); }
+
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1rem; margin-top: 1rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.2rem; min-width: 0; }
+.card h3 { margin-top: 0; }
+.card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+
+.policy h2 { border-top: 1px solid var(--line); padding-top: 1.6rem; }
+.policy .updated { color: var(--muted); margin: 0.6rem 0 0; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 0.4rem 1.3rem; margin-top: 1.6rem; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+.table { overflow-x: auto; margin: 0.8rem 0; }
+th, td { text-align: left; vertical-align: top; padding: 0.55rem 0.7rem 0.55rem 0; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 0.85rem; }
+
+footer.site { border-top: 1px solid var(--line); padding: 1.2rem 0 2rem; color: var(--muted); font-size: 0.88rem; display: grid; gap: 0.4rem; }
+footer.site p { margin: 0; }
