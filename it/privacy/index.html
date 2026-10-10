@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Informativa sulla privacy — Worklog Lite</title>
+  <meta name="description" content="Quali dati tratta Worklog Lite per Jira, cosa viene salvato localmente e come funzionano pubblicità e acquisti.">
+  <link rel="icon" href="../../icon.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="pl" href="../../prywatnosc/">
+  <link rel="alternate" hreflang="en" href="../../en/privacy/">
+  <link rel="alternate" hreflang="de" href="../../de/privacy/">
+  <link rel="alternate" hreflang="it" href="./">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="../../en/"><img src="../../icon.svg" alt="">Worklog Lite</a>
+    <nav class="site" aria-label="Navigazione">
+      <a href="../../en/">Descrizione (English)</a>
+      <a href="../../en/#help">Aiuto (English)</a>
+      <a href="../../prywatnosc/" hreflang="pl" lang="pl">Polski</a>
+      <a href="../../en/privacy/" hreflang="en" lang="en">English</a>
+      <a href="../../de/privacy/" hreflang="de" lang="de">Deutsch</a>
+      <a href="./" hreflang="it" lang="it" aria-current="page">Italiano</a>
+    </nav>
+  </header>
+  <main class="policy">
+    <h1>Informativa sulla privacy</h1>
+    <p class="updated">In vigore dal 10 ottobre 2026.</p>
+
+    <div class="summary">
+      <p><strong>In breve.</strong> Lo sviluppatore di Worklog Lite non gestisce un server intermedio per i dati Jira. L’app si collega direttamente al tuo Jira e conserva le copie di lavoro di registrazioni, attività e report solo in memoria durante l’esecuzione. Salva localmente la lingua scelta e, su tua richiesta, le credenziali. I CSV esportati e i dati copiati negli appunti possono rimanere dopo la chiusura. I moduli mobili di Google e i gestori degli store trattano i dati descritti nelle sezioni 3–4; la promessa relativa ai dati di lavoro Jira non significa che questi moduli non utilizzino memoria persistente.</p>
+    </div>
+    <h2>1. Sviluppatore e contatti</h2>
+    <p>Worklog Lite per Jira (“l’app”) è sviluppata da Konrad Witkowski. Per questioni relative alla privacy: <a href="mailto:witkompapp@gmail.com">witkompapp@gmail.com</a>.</p>
+    <p>Lo sviluppatore non riceve credenziali, attività, registrazioni o report scambiati tra l’app e il tuo Jira. La lingua scelta non viene inviata allo sviluppatore. I moduli pubblicitari e gli store funzionano come descritto di seguito. Se scrivi all’indirizzo di contatto, lo sviluppatore riceve il messaggio e i dati del mittente per risponderti.</p>
+    <h2>2. Dati che rimangono sul dispositivo</h2>
+    <div class="table"><table>
+      <thead><tr><th>Dati</th><th>Dove e per quanto tempo</th></tr></thead>
+      <tbody>
+        <tr><td>Indirizzo Jira, e-mail e token</td><td>In memoria fino alla chiusura dell’app. Se selezioni «Ricorda su questo dispositivo», nel portachiavi di sistema; su Android in un file privato escluso dai backup e cifrato con AES-GCM tramite una chiave di Android Keystore. Uscire dall’account non li elimina. «Rimuovi i dati di accesso salvati» elimina le credenziali salvate e, su Android, anche la chiave.</td></tr>
+        <tr><td>Registrazioni del tempo, attività e report</td><td>Le copie di lavoro rimangono solo in memoria durante l’esecuzione, senza un database dell’app o una cache persistente su disco. Chiudere l’app non elimina i dati salvati in Jira.</td></tr>
+        <tr><td>Lingua dell’interfaccia</td><td>Dopo una modifica manuale viene salvato localmente solo il codice della lingua (ad es. <code>it</code>), fino a un’altra modifica o alla cancellazione dei dati dell’app. Senza una scelta salvata viene usata la lingua di sistema, oppure l’inglese se non è supportata.</td></tr>
+        <tr><td>Tema chiaro o scuro</td><td>Segue le impostazioni di sistema correnti. L’app non salva una preferenza separata per il tema.</td></tr>
+        <tr><td>Esportazione CSV</td><td>Un file creato quando scegli di esportare: sul computer nella posizione scelta, su telefono o tablet nella cartella Documenti dell’app. Rimane dopo la chiusura finché non lo elimini o sostituisci.</td></tr>
+        <tr><td>Appunti</td><td>«Copia tabella» inserisce il report negli appunti di sistema. Chiudere l’app non li svuota; conservazione ed eventuale sincronizzazione dipendono dalle impostazioni di sistema.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Le connessioni a Jira vanno direttamente dal dispositivo all’indirizzo indicato, con le tue autorizzazioni. Lo sviluppatore non ha accesso a questi dati e non li riceve.</p>
+    <h2>3. Pubblicità su iPhone, iPad e Android</h2>
+    <p>La versione mobile gratuita mostra una barra con un annuncio fornito da Google AdMob. Nello Spazio economico europeo e in Svizzera il servizio è fornito da Google Ireland Limited, altrove da Google LLC. Google tratta i dati pubblicitari come titolare autonomo secondo le <a href="https://policies.google.com/privacy?hl=it">Norme sulla privacy di Google</a>. Per l’uso dei dati delle app partner: <a href="https://policies.google.com/technologies/partner-sites?hl=it">policies.google.com/technologies/partner-sites</a>.</p>
+    <p>Il modulo di consenso UMP di Google ricorda le scelte sulla privacy. Il modulo pubblicitario può salvare dati tecnici e annunci nella cache del dispositivo. Sono dati separati dalla preferenza di lingua e dai dati di lavoro Jira. Le versioni macOS, Windows e Linux non hanno questi annunci.</p>
+    <h3>Cosa riceve Google</h3>
+    <ul>
+      <li>l’indirizzo IP, da cui si può ricavare una posizione approssimativa (città o regione),</li>
+      <li>informazioni sul dispositivo e sul sistema, come modello, versione, lingua e fuso orario,</li>
+      <li>identificatori associati all’app sul dispositivo, ad esempio l’identificatore del fornitore su iOS o l’ID set di app su Android,</li>
+      <li>informazioni sugli annunci mostrati e sui tocchi ricevuti,</li>
+      <li>dati diagnostici del modulo pubblicitario, come tempi di avvio ed errori,</li>
+      <li>l’indirizzo della pagina descrittiva dell’app usato come contesto per gli annunci.</li>
+    </ul>
+    <h3>Cosa non riceve Google</h3>
+    <ul>
+      <li>dati del tuo Jira: indirizzo, credenziali, attività, registrazioni o report,</li>
+      <li>l’identificatore pubblicitario del dispositivo. Su iOS l’app non richiede l’autorizzazione al tracciamento (App Tracking Transparency); su Android non ha l’autorizzazione per l’ID pubblicità di Google.</li>
+    </ul>
+    <h3>Consenso</h3>
+    <p>Nel SEE, nel Regno Unito e in Svizzera l’app usa il modulo di consenso di Google quando il modulo lo ritiene necessario. Le tue scelte influenzano il tipo di annunci e l’uso dei dati. Il rifiuto può limitare gli annunci o impedirne il caricamento. Gli annunci con limitazioni non sono personalizzati, ma possono usare memoria tecnica e, secondo la configurazione di Google, memoria per rilevare abusi. Vedi la <a href="https://support.google.com/admob/answer/10105530">documentazione Google sugli annunci con limitazioni</a>. Puoi modificare o revocare il consenso richiesto tramite «Impostazioni privacy della pubblicità» nella finestra «Senza pubblicità», quando Google rende disponibile questa opzione. Il trattamento basato sul consenso si fonda sull’art. 6, par. 1, lett. a del GDPR.</p>
+    <h2>4. L’acquisto «Senza pubblicità»</h2>
+    <p>Apple (App Store) o Google (Google Play) gestisce l’acquisto secondo le proprie condizioni e informative. Lo sviluppatore non riceve dati della carta o di fatturazione. L’app ottiene dallo store il prezzo e lo stato dell’acquisto. Non crea un proprio database persistente degli acquisti; il sistema dello store può conservare transazioni e relativo stato sul dispositivo. Dopo la conferma o il ripristino dell’acquisto, entrambe le barre scompaiono e l’app non richiede altri annunci. Se l’acquisto viene riconosciuto all’avvio, l’app non avvia il modulo pubblicitario di Google.</p>
+    <p>Dopo due caricamenti pubblicitari consecutivi non riusciti, può comparire una barra dell’app «Senza pubblicità» con il prezzo dello store oppure «Scopri l’opzione senza pubblicità» se il prezzo non è disponibile. Apre la finestra di acquisto esistente. L’app non invia analisi separate delle visualizzazioni o dei clic su questa barra; la richiesta del prezzo e l’acquisto usano i servizi dello store.</p>
+    <h2>5. Destinatari dei dati</h2>
+    <p>Le credenziali e le operazioni su attività e registrazioni del tempo vengono inviate all’istanza Jira indicata e trattate secondo le regole del suo gestore. I dati pubblicitari vanno a Google (sezione 3), quelli necessari all’acquisto ad Apple o Google come gestore dello store (sezione 4). Lo sviluppatore non vende dati Jira e non ne riceve copie. Google può trattare dati fuori dal SEE con le garanzie descritte nella propria informativa.</p>
+    <h2>6. I tuoi diritti</h2>
+    <p>Hai diritto all’accesso, alla rettifica, alla cancellazione, alla limitazione del trattamento, alla portabilità e all’opposizione, nonché a revocare il consenso senza pregiudicare il trattamento precedente. Puoi presentare un reclamo a un’autorità di controllo: in Polonia al Presidente dell’Ufficio per la protezione dei dati personali (<a href="https://uodo.gov.pl/en">uodo.gov.pl</a>), oppure all’autorità del tuo paese.</p>
+    <p>Per i dati salvati in Jira contatta il suo amministratore; per quelli pubblicitari contatta Google (<a href="https://myaccount.google.com/data-and-privacy?hl=it">myaccount.google.com</a>). Elimina le credenziali locali con «Rimuovi i dati di accesso salvati» e cambia la lingua nell’app. Gestisci i CSV e gli appunti con gli strumenti del sistema. Per domande o per la corrispondenza con lo sviluppatore scrivi a <a href="mailto:witkompapp@gmail.com">witkompapp@gmail.com</a>.</p>
+    <h2>7. Minori</h2>
+    <p>L’app è uno strumento di lavoro e non è rivolta ai bambini. Le richieste pubblicitarie non sono contrassegnate come rivolte ai bambini.</p>
+    <h2>8. Modifiche</h2>
+    <p>Le modifiche all’informativa appariranno su questa pagina con una nuova data di entrata in vigore. Le modifiche significative saranno indicate anche nelle note di aggiornamento dell’app nello store.</p>
+  </main>
+  <footer class="site">
+    <p><a href="../../en/">Worklog Lite (English)</a></p>
+    <p>Jira è un marchio di Atlassian. Worklog Lite non è un prodotto Atlassian e non è affiliato ad Atlassian.</p>
+    <p>© 2026 Konrad Witkowski</p>
+  </footer>
+</div>
+</body>
+</html>

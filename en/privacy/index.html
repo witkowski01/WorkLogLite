@@ -8,6 +8,9 @@
   <meta name="description" content="What data Worklog Lite for Jira processes, what Google receives for ads, and how the “Remove ads” purchase works.">
   <link rel="icon" href="../../icon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="pl" href="../../prywatnosc/">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="alternate" hreflang="de" href="../../de/privacy/">
+  <link rel="alternate" hreflang="it" href="../../it/privacy/">
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
@@ -17,32 +20,36 @@
     <nav class="site" aria-label="Site">
       <a href="../">About</a>
       <a href="../#help">Help</a>
-      <a href="./" aria-current="page">Privacy policy</a>
       <a href="../../prywatnosc/" hreflang="pl" lang="pl">Polski</a>
+      <a href="./" hreflang="en" lang="en" aria-current="page">English</a>
+      <a href="../../de/privacy/" hreflang="de" lang="de">Deutsch</a>
+      <a href="../../it/privacy/" hreflang="it" lang="it">Italiano</a>
     </nav>
   </header>
 
   <main class="policy">
     <h1>Privacy policy</h1>
-    <p class="updated">Effective from 5 October 2026.</p>
+    <p class="updated">Effective from 10 October 2026.</p>
 
     <div class="summary">
-      <p><strong>In short.</strong> Worklog Lite has no server and does not collect your data. Time entries and reports travel directly between your device and your Jira. The only exception is the free iPhone, iPad and Android version: it shows Google ads, and Google receives basic technical data about the device when it does. After the “Remove ads” purchase, the Google ads module is not started. The macOS, Windows and Linux versions have no ads.</p>
+      <p><strong>In short.</strong> The developer of Worklog Lite does not run an intermediary server for Jira data. The app connects directly to your Jira and keeps working copies of entries, issues and reports only in memory while running. It saves your chosen language locally and, if you request it, your sign-in details. CSV exports and data copied to the clipboard may remain after the app closes. Google’s mobile modules and the store operators process the data described in sections 3–4; the promise about Jira working data does not mean these modules have no storage.</p>
     </div>
 
     <h2>1. Developer and contact</h2>
     <p>Worklog Lite for Jira (“the app”) is made by Konrad Witkowski. Contact for all privacy matters: <a href="mailto:witkompapp@gmail.com">witkompapp@gmail.com</a>.</p>
-    <p>The developer does not collect or store your data. The GDPR and the App Store and Google Play rules still require a privacy policy to say who publishes the app and how to contact them. For ads (section 3), the developer is responsible together with Google for the ads module in the app sending data to Google.</p>
+    <p>The developer does not receive sign-in details, issues, entries or reports exchanged between the app and your Jira. Your chosen interface language is not sent to the developer. Advertising modules and stores operate as described below. If you email the contact address, the developer receives your message and sender details in order to reply.</p>
 
     <h2>2. Data that stays on your device</h2>
     <div class="table">
       <table>
         <thead><tr><th>Data</th><th>Where and for how long</th></tr></thead>
         <tbody>
-          <tr><td>Jira address, email and token</td><td>In the app's memory until you close it. If you check “Remember on this device”, in the system keychain until you remove them with “Remove saved sign-in details”.</td></tr>
-          <tr><td>Time entries, issues, reports</td><td>Downloaded from your Jira and kept only in the app's memory. They are gone when you close the app.</td></tr>
-          <tr><td>Interface language</td><td>Only the language code (e.g. <code>en</code>) in the app's local storage.</td></tr>
-          <tr><td>CSV export</td><td>A file you save yourself, in a place you choose or in the app's folder.</td></tr>
+          <tr><td>Jira address, email and token</td><td>In the app's memory until you close it. If you check “Remember on this device”, in the system keychain; on Android, in a private file encrypted with AES-GCM using an Android Keystore key and excluded from backups. Signing out does not delete them. “Remove saved sign-in details” deletes the saved credentials and, on Android, the encryption key.</td></tr>
+          <tr><td>Time entries, issues, reports</td><td>Working copies are kept only in memory while the app runs, with no app database or persistent disk cache. Closing the app does not delete data saved in Jira itself.</td></tr>
+          <tr><td>Interface language</td><td>After you change the language manually, only its code (e.g. <code>en</code>) is saved in the app’s local storage until you change it again or clear the app’s data. With no saved choice, the app uses the system language, or English if that language is not supported.</td></tr>
+          <tr><td>Light or dark theme</td><td>Follows the current system settings. The app does not save a separate theme preference.</td></tr>
+          <tr><td>CSV export</td><td>A file created when you choose to export: in a location you select on a computer, or in the app’s Documents folder on a phone or tablet. It remains after the app closes until you delete or replace it.</td></tr>
+          <tr><td>Clipboard</td><td>Choosing “Copy table” places the report on the system clipboard. Closing the app does not clear it; retention and any synchronisation depend on system settings.</td></tr>
         </tbody>
       </table>
     </div>
@@ -50,6 +57,7 @@
 
     <h2>3. Ads in the iPhone, iPad and Android version</h2>
     <p>The free mobile version shows one bar with an ad served by Google AdMob. In the European Economic Area and Switzerland the service is provided by Google Ireland Limited, elsewhere by Google LLC. Google processes ad data as an independent controller under the <a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>. How Google uses data from partner apps: <a href="https://policies.google.com/technologies/partner-sites?hl=en">policies.google.com/technologies/partner-sites</a>.</p>
+    <p>Google’s UMP consent module remembers privacy choices. The ads module may store technical data and cached ads on the device. This is separate from the language preference and Jira working data. The macOS, Windows and Linux versions do not have these ads.</p>
     <h3>What Google receives</h3>
     <ul>
       <li>the IP address, which can be used to estimate an approximate location (city or region),</li>
@@ -65,17 +73,19 @@
       <li>the device's advertising identifier. On iOS the app does not ask for tracking permission (App Tracking Transparency), and on Android it does not have the Google advertising ID permission.</li>
     </ul>
     <h3>Consent</h3>
-    <p>In the European Union, the United Kingdom and Switzerland, a Google consent window appears the first time you open the app. If you agree, Google may use the device's local storage and personalise ads (legal basis: consent, Article 6(1)(a) GDPR). If you don't, Google shows limited ads, without cookies or local storage and without profiling. You can change or withdraw your consent at any time with the “Ad privacy settings” button in the “Remove ads” window.</p>
+    <p>In the EEA, the United Kingdom and Switzerland, the app uses Google’s consent form when the consent module determines it is required. Your choices affect the available ad mode and use of data. Refusing consent may limit ads or prevent them from loading. Limited ads do not use data for personalisation, but may still use technical storage and, depending on Google’s configuration, storage for fraud detection. See <a href="https://support.google.com/admob/answer/10105530">Google’s limited ads documentation</a>. You can change or withdraw required consent using “Ad privacy settings” in the “Remove ads” window when Google makes that option available. Processing based on consent relies on Article 6(1)(a) GDPR.</p>
 
     <h2>4. The “Remove ads” purchase</h2>
-    <p>The purchase is handled by Apple (App Store) or Google (Google Play) under their own terms and privacy policies. The author of the app does not receive card or payment details. The app only checks on the device whether your store account has the “Remove ads” purchase, and stores nothing about it. After the purchase the Google ads module is not started and the app does not connect to the ad network.</p>
+    <p>Apple (App Store) or Google (Google Play) handles the purchase under its own terms and privacy policies. The developer does not receive card or billing details. The app obtains the price and purchase status from the store. It does not create its own persistent purchase database; the store system may keep transactions and their status on the device. Once a purchase or restoration is confirmed, both bars disappear and the app stops requesting further ads. When a purchase is recognised at launch, the app does not start the Google ads module.</p>
+
+    <p>After two consecutive failed ad loads, the app may show its own “Go ad-free” bar with the store price, or “Explore the ad-free option” if no price is available. It opens the existing purchase window. The app sends no separate impression or click analytics for this bar; price lookup and purchase use the store’s services.</p>
 
     <h2>5. Who receives data</h2>
-    <p>Only Google (ads, section 3) and Apple or Google as the store operator (purchase, section 4). The author of the app does not sell data or share it with anyone else. Google may process data outside the EEA with the safeguards described in its privacy policy.</p>
+    <p>Sign-in details and operations on issues and time entries go to the Jira instance you specify and are processed under its operator’s rules. Ad data goes to Google (section 3), and data needed for a purchase goes to Apple or Google as the store operator (section 4). The developer does not sell Jira data or receive copies of it. Google may process data outside the EEA with the safeguards described in its privacy policy.</p>
 
     <h2>6. Your rights</h2>
     <p>You have the right to access, rectify and erase your data, to restrict its processing and to data portability, the right to object, and the right to withdraw consent without affecting earlier processing. You can also lodge a complaint with a data protection authority, in Poland the President of the Personal Data Protection Office (<a href="https://uodo.gov.pl/en">uodo.gov.pl</a>), or the authority in your country.</p>
-    <p>The author of the app does not store your data, so for ad data please contact Google (<a href="https://myaccount.google.com/data-and-privacy?hl=en">myaccount.google.com</a>). If you have questions, write to <a href="mailto:witkompapp@gmail.com">witkompapp@gmail.com</a> and I will help.</p>
+    <p>For data saved in Jira, contact its administrator; for ad data, contact Google (<a href="https://myaccount.google.com/data-and-privacy?hl=en">myaccount.google.com</a>). Delete local sign-in details with “Remove saved sign-in details”; change the language in the app, and manage CSV files and the clipboard using system tools. For questions or correspondence with the developer, email <a href="mailto:witkompapp@gmail.com">witkompapp@gmail.com</a>.</p>
 
     <h2>7. Children</h2>
     <p>The app is a work tool and is not directed at children. Ad requests are not marked as child-directed.</p>
